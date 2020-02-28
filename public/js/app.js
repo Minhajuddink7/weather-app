@@ -4,7 +4,7 @@ weatherForm.addEventListener("submit", e => {
   e.preventDefault();
   const area = search.value;
 
-  fetch(`http://localhost:3000/weather?city=${area}`).then(res => {
+  fetch(`/weather?city=${area}`).then(res => {
     res.json().then(data => {
       document.getElementById(
         "result"
