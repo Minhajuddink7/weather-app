@@ -1,6 +1,12 @@
 h1 {
   color: gray;
 }
+body {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+}
 
 a {
   text-decoration: none;
@@ -8,4 +14,12 @@ a {
   color: green;
   font-weight: 600;
   margin-right: 100px;
+}
+
+h4 {
+  font-family: Segoe Print;
+  color: #334;
+}
+#footer {
+  margin-top: auto;
 }
