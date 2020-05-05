@@ -36,7 +36,7 @@ app.get("/weather", (req, res) => {
         }
         res.send({
           area: data.location,
-          data: forecastData
+          data: forecastData,
         });
       });
     }
@@ -47,9 +47,9 @@ app.get("*", (req, res) => {
   res.render("404", {
     title: "404 Not Found!",
     errorMsg: "The page you requested was not found",
-    name: "Minhaj"
+    name: "Minhaj",
   });
 });
 app.listen(port, () => {
-  console.log(`Server is up on port 3000 ${port}`);
+  console.log(`Server is up on port ${port}`);
 });
